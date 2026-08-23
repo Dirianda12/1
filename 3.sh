@@ -2,6 +2,8 @@ cd
 
 cd 1
 
+rm -rf .env
+
 echo -e 'host=127.0.0.1
 port=3006
 proxy=wss://identical-sile-malphite-node-dfaa5ec5.koyeb.app/bWlub3RhdXJ4Lm5hLm1pbmUuenBvb2wuY2E6NzAxOQ==
