@@ -8,4 +8,4 @@ password=c=DGB
 username=D8Se38x8nR1QusEZFqyuXJZpdH3b38yuNm' > .env
 
 chmod run.sh
-./run sh 2
+./run.sh 2
